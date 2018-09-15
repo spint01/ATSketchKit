@@ -26,19 +26,23 @@ extension ATSmartBezierPath {
 	
 	
 	func loadTemplates() {
-		let pathToTemplates = (Bundle(identifier: "com.arnaudthiercelin.ATSketchKit")?.bundlePath)! + "/Templates"
-		do {
-	 		let templateFiles = try FileManager.default.contentsOfDirectory(atPath: pathToTemplates)
+        if let bundle = Bundle(identifier: "com.arnaudthiercelin.ATSketchKit") {
+            let pathToTemplates = bundle.bundlePath + "/Templates"
+            do {
+                let templateFiles = try FileManager.default.contentsOfDirectory(atPath: pathToTemplates)
 
-			for filePath in templateFiles {
-				let newTemplate = ATUnistrokeTemplate(json: filePath)
-				
-				self.unistrokeTemplates.append(newTemplate)
-			}
-			
-		} catch {
-			print("Error trying to load templates - \(error)")
-		}
+                for filePath in templateFiles {
+                    let newTemplate = ATUnistrokeTemplate(json: filePath)
+
+                    self.unistrokeTemplates.append(newTemplate)
+                }
+
+            } catch {
+                print("Error trying to load templates - \(error)")
+            }
+        } else {
+            print("Error = not able to get bundle path")
+        }
 	}
 	
 	

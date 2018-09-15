@@ -200,6 +200,7 @@
 				89C20FFA1C2CCB95001DF73B /* README.md */,
 				8925754D20655FFB00B361A2 /* LICENSE.md */,
 				8925754B20655FF400B361A2 /* CONTRIBUTE.md */,
+				892C3D971C078C6D00804A8B /* Info.plist */,
 				892C3D941C078C6D00804A8B /* ATSketchKit */,
 				892C3DA01C078C6D00804A8B /* ATSketchKitTests */,
 				89C210011C2CDF5D001DF73B /* ATSketchKitDemo */,
@@ -225,7 +226,6 @@
 				892C3D951C078C6D00804A8B /* ATSketchKit.h */,
 				892C3DBA1C079AEF00804A8B /* ATSketchView */,
 				89C210281C338192001DF73B /* ATSmartBezierPath */,
-				892C3D971C078C6D00804A8B /* Info.plist */,
 				891FFFFE1C4C04C100CF153F /* ATColorPicker */,
 			);
 			path = ATSketchKit;
@@ -709,7 +709,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ATSketchKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arnaudthiercelin.ATSketchKit;
@@ -733,7 +733,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ATSketchKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arnaudthiercelin.ATSketchKit;

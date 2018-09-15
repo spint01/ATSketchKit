@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
     s.homepage         = "https://github.com/spint01/ATSketchKit"
     s.license          = 'MIT'
-    s.author           = { "Copyright (c) 2015-2016 Arnaud Thiercelin" }
+    s.author           = { "Arnaud Thiercelin"=> "https://twitter.com/athiercelin" }
     s.source           = { :git => "https://github.com/spint01/ATSketchKit", :tag => s.version.to_s }
     s.platform         = :ios, '10.0'
     s.requires_arc     = true

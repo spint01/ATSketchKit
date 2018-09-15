@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
     s.source           = { :git => "https://github.com/spint01/ATSketchKit", :tag => s.version.to_s }
     s.platform         = :ios, '10.0'
     s.requires_arc     = true
-    s.source_files     = 'Source/**/*'
+    s.source_files     = 'ATSketchKit/**/*'
     s.frameworks       = 'AVFoundation'
     s.swift_version    = "4.1"
     s.ios.deployment_target = "10.0"

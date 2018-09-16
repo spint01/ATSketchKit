@@ -31,7 +31,7 @@ class ATSmartBezierPath: UIBezierPath {
 		self.init()
 		self.points = points
 		
-		self.loadTemplates()
+//        self.loadTemplates()
 	}
 	
 	override func move(to point: CGPoint) {

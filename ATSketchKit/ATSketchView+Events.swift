@@ -132,14 +132,14 @@ extension ATSketchView {
 			}
 		}
 		
-		NSLog("Copy paste the source below:")
+		print("Copy paste the source below:")
 		var sourceCode = "\nnewTemplate.points = ["
 		for point in self.pointsBuffer {
 			sourceCode += "CGPoint(x: \(point.x - minX), y: \(point.y - minY)),\n"
 		}
 		sourceCode += "]"
 		
-		NSLog("\(sourceCode)")
+		print("\(sourceCode)")
 	}
 	
 	public override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
